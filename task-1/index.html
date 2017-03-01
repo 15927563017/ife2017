@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>自定义checkbox， radio样式</title>
+	<style type="text/css">
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    .radio, .checkbox{
+	    	position: relative;
+	    }
+		input[type="radio"]{
+			width: 16px;
+			height: 16px;
+			margin: 10px;
+			cursor: pointer;
+			opacity: 0;
+		}
+		input[type="checkbox"]{
+			width: 16px;
+			height: 16px;
+			margin: 10px;
+			cursor: pointer;
+			opacity: 0;
+		}
+		input[type="radio"]:checked + span{
+			border-color: #d73d32;
+		}
+		input[type="radio"]:checked + span:after{
+			position: absolute;
+			top: 19px;
+			content: '';
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: #d73d32;
+			margin-left: 3px;
+			margin-top: -5px;
+		}
+		input[type="checkbox"]:checked + span{
+			border-color: #d73d32;
+		}
+		input[type="checkbox"]:checked + span:after{
+			position: absolute;
+			left: 12px;
+			margin: auto;
+			content: '\2714';
+			color: red;
+			width:8px;
+			height:8px;
+			text-align: center;
+			font-size: 10px;
+			font-weight: 700;
+		}
+
+		.radio span{
+			margin-left: -32px;
+			display: inline-block;
+			background-color: #fff;
+			width: 14px;
+			height: 14px;
+			border-radius: 14px;
+			border: solid 1px #d9d9d9;
+		}
+		.checkbox span{
+			margin-left: -32px;
+			display: inline-block;
+			background-color: #fff;
+			width: 14px;
+			height: 14px;
+			line-height: 14px;
+			border: solid 1px #d9d9d9;
+		}
+	
+	</style>
+</head>
+<body>
+<div class="radio">
+	<input type="radio" name="radioButton">
+	<span></span>
+	<input type="radio" name="radioButton">
+	<span></span>
+</div>
+<div class="checkbox">
+	<input type="checkbox" name="checkbox1">
+	<span class="span2"></span>
+</div>
+
+</body>
+</html>
