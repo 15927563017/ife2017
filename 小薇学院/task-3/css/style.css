@@ -4,18 +4,56 @@ body{
   font-size: 15px;
 }
 .wrapper_main{
-	width: 100%;
+	width: 96%;
+	margin: 0 auto;
 	background-color: #eee;
 	border: 1px solid #999;
+	overflow: hidden;
 	padding: 20px;
+	min-width: 600px;
+}
+ .left{
+	width: 200px;
+	border: 1px solid #999;
+	background-color: #fff;
+	height: 120px;
+	float: left;
+	//vertical-align: middle;
+}
+ .left span{
+ 	height: 80px;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: top;
 
 }
-.wrapper_main .left{
-	width: 200px;
-	background-color: #fff;
-	height: 400px;
+.left img{
+	width: 80px;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: 1px solid #999;
 }
-.wrapper_main .left img{
-	width: 60px;
-	height: 60px;
+.middle{
+	margin-left: 220px;
+	margin-right: 140px;
+	background-color: #fff;
+	border: 1px solid #999;
+
+
+}
+.right{
+	float: right;
+	width: 120px;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+.right img{
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	display: block;
+	border: 1px solid #999;
 }
