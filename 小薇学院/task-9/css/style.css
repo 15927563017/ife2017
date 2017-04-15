@@ -189,7 +189,7 @@ body{
 	text-decoration: none;
 }
 .rhd_tx:hover{
-	text-decoration: underline;
+	color: red;
 }
 .rseh{
 	width: 90%;
@@ -257,7 +257,9 @@ body{
 	cursor: pointer;
 }
 .rspt{
-	width: 90%;
+	width: 927px;
+	padding-left: -30px;
+	overflow: hidden;
 	margin: 10px auto;
 	font-size: 12px;
 }
@@ -307,7 +309,7 @@ body{
 }
 .rspt_seh{
 	display: inline-block;
-	width: 116px;
+	width: 104px;
 	height: 65px;
 	text-align: center;
 	text-decoration: none;
@@ -407,7 +409,7 @@ body{
 .rsdea_blo1{
 	position: relative;
 	display: inline-block;
-	width: 565px;
+	width: 562px;
 	height: 400px;
 	margin-top: 10px;
 	border: #D0D1D5 1px solid;
@@ -510,13 +512,13 @@ body{
 	color: #fff;
 }
 .rsfin{
-	width: 90%;
+	width: 926px;
 	margin: 10px auto;
 	font-size: 12px;	
 }
 .rsfin_blo1{
 	display: inline-block;
-	width: 348px;
+	width: 344px;
 	height : 363px;
 	vertical-align: top;
 	margin-top: 10px;
