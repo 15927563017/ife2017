@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>任务九：使用HTML/CSS实现一个复杂页面</title>
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+	<img src="img/pic.png" class="nav_pic">	
+	<span class="nav_login">
+		<i class="fa fa-user nav_fa"></i>
+		<a class="nav_login_btn" href="#">登录</a>
+	</span>
+	<form class="nav_form">
+		<input type="text" name="q" class="nav_search">
+	</form>
+  </div>
+</header>
+<div class="main">
+<div class="left">
+	<div>
+		<span class="lhd_circle"><span class="lhd_cci"></span></span>
+		<a class="lhd_name" href="#">ABC123</a>
+	</div>
+	<div>
+		<span class="lhd_cols"><p class="lhd_ip">110</p><p class="lhd_ip">收藏</p></span>
+		<span class="lhd_fans"><p class="lhd_ip">313</p><p class="lhd_ip">粉丝</p></span>
+	</div>
+	<ul class="llist_1">
+		<li class="lli_1"><a href="#"><i class="fa fa-area-chart"></i>&nbsp;&nbsp;个人报表</a>
+		  <ul class="llist_2">
+		    <li class="lli_2"><a href="#"><i class="fa fa-angle-right fa-lg lli_drig"></i><i class="fa fa-angle-down fa-lg lli_ddow"></i><i class="fa fa-folder"></i>&nbsp;&nbsp;文件一</a>
+		       <ul class="llist_3">
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档1</a></li>
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档2</a></li>
+		       </ul>
+		    </li>
+		    <li class="lli_2"><a href="#"><i class="fa fa-angle-right fa-lg lli_drig"></i><i class="fa fa-angle-down fa-lg lli_ddow"></i><i class="fa fa-folder"></i>&nbsp;&nbsp;文件二</a>
+	           <ul class="llist_3">
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档1</a></li>
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档2</a></li>
+		       </ul>
+		    </li>
+		    <li class="lli_2"><a href="#"><i class="fa fa-angle-right fa-lg lli_drig"></i><i class="fa fa-angle-down fa-lg lli_ddow"></i><i class="fa fa-folder"></i>&nbsp;&nbsp;文件三</a>
+	           <ul class="llist_3">
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档1</a></li>
+		       	 <li class="lli_3"><a href="#"><i class="fa fa-file-text"></i>&nbsp;&nbsp;文档2</a></li>
+		       </ul>
+		    </li>
+		  </ul>
+		</li>
+		<li class="lli_1"><a href="#"><i class="fa fa-star"></i>&nbsp;&nbsp;个人收藏</a></li>
+		<li class="lli_1"><a href="#"><i class="fa fa-share-alt"></i>&nbsp;&nbsp;我的分享</a></li>
+		<li class="lli_1"><a href="#"><i class="fa fa-star"></i>&nbsp;&nbsp;图库</a></li>
+		<li class="lli_1"><a href="#"><i class="fa fa-star"></i>&nbsp;&nbsp;成长记录</a></li>
+		<li class="lli_1"><a href="#"><i class="fa fa-vcard"></i>&nbsp;&nbsp;账户信息</a></li>
+	</ul>
+</div>
+<div class="right">
+  <div class="rhd">
+  	<a href="#" class="rhd_tx">C站</a>
+  	<a href="#" class="rhd_tx">/&nbsp;&nbsp;个人报表</a>
+  	<a href="#" class="rhd_tx">/&nbsp;&nbsp;文件一</a>
+  	<a href="#" class="rhd_tx">/&nbsp;&nbsp;文档一</a>
+  </div>
+  <form class="rseh">
+  	<span class="rseh_cnt">
+  		查询项
+  		<select class="rseh_cnt_selc">
+  			<option value="1">第一项</option>
+  			<option value="2">第二项</option>
+  			<option value="3">第三项</option>
+  		</select>
+  	</span>
+  	<span class="rseh_sel">
+  		<p>买方
+  		    <select class="rseh_sel_selc">
+	  			<option value="a">小A</option>
+	  			<option value="b">小B</option>
+	  			<option value="c">小C</option>
+	  		</select>
+  		</p>
+   		<p>卖方
+  		    <select  class="rseh_sel_selc">
+	  			<option value="a">小A</option>
+	  			<option value="b">小B</option>
+	  			<option value="c">小C</option>
+	  		</select>
+  		</p>
+  	</span>
+  	<span class="rseh_tim">
+  		<p>日期<input type="date" name="time" value="2016-04-01" class="rseh_tim_date">
+  		&nbsp;&nbsp;总耗时 
+  	        <select class="rseh_tim_ipt2">
+	  			<option value="a">8天</option>
+	  			<option value="b">8天</option>
+	  			<option value="c">8天</option>
+	  		</select>
+  		</p>
+   		<p>人数
+  		    <select class="rseh_tim_ipt2">
+	  			<option value="a">10人</option>
+	  			<option value="b">10人</option>
+	  			<option value="c">10人</option>
+	  		</select>
+	  		&nbsp;&nbsp;成交项
+  		    <select class="rseh_tim_ipt1">
+	  			<option value="a">10项</option>
+	  			<option value="b">10项</option>
+	  			<option value="c">10项</option>
+	  		</select>
+  		</p>
+  	</span>
+  	<span class="rseh_btn">
+  		<input type="submit" value="搜索" name="" class="resh_btn_sb">
+  	</span>
+  </form>
+  <div class="rspt">
+  	<a href="#" class="rspt_chge"><</a>
+  	<a href="#" class="rspt_item">10.00&nbsp;am<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1200</span>
+    </a>
+    <a href="#" class="rspt_item">11.00&nbsp;am<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1300</span>
+    </a>
+    <a href="#" class="rspt_item">12.00&nbsp;am<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1200</span>
+    </a>
+    <a href="#" class="rspt_item">1.00&nbsp;pm<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1400</span>
+    </a>
+    <a href="#" class="rspt_item">2.00&nbsp;pm<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1500</span>
+    </a>
+    <a href="#" class="rspt_item">3.00&nbsp;pm<br>
+  	  <span class="rspt_item_dol">￥</span>
+  	  <span class="rspt_item_num">1800</span>
+    </a>
+  	<a href="#" class="rspt_chge">></a>
+  	<a href="#" class="rspt_seh">
+  	  <img src="img/pic2.png" class="rspt_seh_pic">
+  	  <span class="rspt_seh_tx">历史查询</span>
+  	</a>
+  </div>
+  <div class="rstac">
+    <p>2016年4月份统计</p>
+    <div class="clear">
+    	<span class="rstac_item">
+    	  <span class="rstac_nte">133311<br><span class="rstac_intx">成交量</span></span>
+    	  <span class="rstac_block"></span>
+    	</span>
+    	<span class="rstac_item">
+    		<span class="rstac_nte">133311<br><span class="rstac_intx">成交量</span></span>
+    	    <span class="rstac_block"></span>
+    	</span>
+    	<span class="rstac_item">
+    		<span class="rstac_nte">133311<br><span class="rstac_intx">成交量</span></span>
+    	    <span class="rstac_block"></span>
+    	</span>
+    	<span class="rstac_item">
+    		<span class="rstac_nte">133311<br><span class="rstac_intx">成交量</span></span>
+    	    <span class="rstac_block"></span>
+    	</span>
+    </div>
+  </div>
+  <div class="rsdea">
+    <div class="rsdea_blo1">
+      <p class="rsdea_head">第一组项目</p>
+      <ul class="rsdea_ulists">
+        <li class="rsdea_list_item"><a href="#" class="rsdea_list_link rsdea_link_active">项目一</a>
+          <div class="rsdea_wrapper_table">
+           <table border="1" cellpadding="7" cellspacing="0" class="rsdea_table">
+             <tr>
+                 <td>购买材料一</td>
+                 <td>购买材料一</td>
+                 <td>购买材料一</td>
+                 <td>购买材料一</td>
+              </tr>
+              <tr>
+                 <td>购买材料二</td>
+                 <td>购买材料二</td>
+                 <td>购买材料二</td>
+                 <td>购买材料二</td>
+              </tr>
+              <tr>
+                 <td>购买材料四</td>
+                 <td>购买材料四</td>
+                 <td>购买材料四</td>
+                 <td>购买材料四</td>
+              </tr>
+              <tr>
+                 <td>购买材料六</td>
+                 <td>购买材料六</td>
+                 <td>购买材料六</td>
+                 <td>购买材料六</td>
+              </tr>
+              <tr>
+                 <td>购买材料十三</td>
+                 <td>购买材料十三</td>
+                 <td>购买材料十三</td>
+                 <td>购买材料十三</td>
+              </tr>
+              <tr>
+                 <td>购买材料二十</td>
+                 <td>购买材料二十</td>
+                 <td>购买材料二十</td>
+                 <td>购买材料二十</td>
+              </tr>
+           </table>
+           </div>
+        </li>
+        <li class="rsdea_list_item"><a href="#" class="rsdea_list_link">项目一</a></li>
+        <li class="rsdea_list_item"><a href="#" class="rsdea_list_link">项目一</a></li>
+        <li class="rsdea_list_item"><a href="#" class="rsdea_list_link">项目一</a></li>
+        <li class="rsdea_list_item"><a href="#" class="rsdea_list_link">项目一</a></li>
+      </ul>
+    </div> 
+    <div class="rsdea_blo2">
+      <p class="rsdea_head">第一组项目</p>
+      <p class="rsdea_blo2_p"><span class="light_color">标题</span><br>项目报表三</p>
+      <p class="rsdea_blo2_p">
+        <span class="rsdea_blo2_span1"><span class="light_color">价格</span><br>￥158</span>
+        <span class="rsdea_blo2_span2"><span class="light_color">负责人</span><br>小A</span>
+      </p>
+      <p class="rsdea_blo2_p"><span class="light_color">详细介绍</span><br>该项目目前负责人是......</p>
+      <div class="rsdea_blo2_last">
+        <input type="checkbox" name="">
+        <span class="light_color">遵守保密协议</span>
+        <input type="button" value="搜索" name="" class="rsdea_btn_seach">
+      </div>
+    </div>
+  </div>
+  <div class="rsfin">
+    <div class="rsfin_blo1">
+      <p class="rsfin_head">日历</p>
+      <div>
+        <select class="rsfin_sel1">
+          <option>2016年</option>
+          <option>2017年</option>
+        </select>
+        <select class="rsfin_sel2">
+          <option>4月</option>
+          <option>5月</option>
+        </select>
+        <select class="rsfin_sel3">
+          <option>标注日期</option>
+          <option>标注日期</option>
+        </select>
+        <input type="button" value="返回今天" name="" class="rsfin_btn">
+      </div>
+      <div class="rsfin_line">
+          <span class="rsfin_line_item">一</span>
+          <span class="rsfin_line_item">二</span>
+          <span class="rsfin_line_item">三</span>
+          <span class="rsfin_line_item">四</span>
+          <span class="rsfin_line_item">五</span>
+          <span class="rsfin_line_item">六</span>
+          <span class="rsfin_line_item">日</span>
+      </div>
+      <div class="rsfin_caline">
+        <span class="rsfin_caline_item"><span></span><br><span></span></span>
+        <span class="rsfin_caline_item"><span></span><br><span></span></span>
+        <span class="rsfin_caline_item"><span></span><br><span></span></span>
+        <span class="rsfin_caline_item"><span></span><br><span></span></span>
+        <span class="rsfin_caline_item"><span>1</span><br><span class="rsfin_text_red">愚人节</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">2</span><br><span>廿五</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">3</span><br><span>廿六</span></span>
+      </div>
+      <div class="rsfin_caline">
+        <span class="rsfin_caline_item"><span>4</span><br><span>廿七</span></span>
+        <span class="rsfin_caline_item"><span>5</span><br><span class="rsfin_text_red">清明</span></span>
+        <span class="rsfin_caline_item"><span>6</span><br><span>廿九</span></span>
+        <span class="rsfin_caline_item"><span>7</span><br><span>三月</span></span>
+        <span class="rsfin_caline_item"><span>8</span><br><span>初二</span></span>
+        <span class="rsfin_caline_item rsfin_border_yellow"><span class="rsfin_text_red">9</span><br><span>初三</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">10</span><br><span>初四</span></span>
+      </div>
+      <div class="rsfin_caline">
+        <span class="rsfin_caline_item"><span>11</span><br><span>初五</span></span>
+        <span class="rsfin_caline_item rsfin_border_yellow"><span>12</span><br><span>初六</span></span>
+        <span class="rsfin_caline_item"><span>13</span><br><span>初七</span></span>
+        <span class="rsfin_caline_item"><span>14</span><br><span>初八</span></span>
+        <span class="rsfin_caline_item"><span>15</span><br><span>初九</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">16</span><br><span>初十</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">17</span><br><span>十一</span></span>
+      </div>
+      <div class="rsfin_caline">
+        <span class="rsfin_caline_item"><span>18</span><br><span>十二</span></span>
+        <span class="rsfin_caline_item rsfin_border_yellow"><span>19</span><br><span>十三</span></span>
+        <span class="rsfin_caline_item"><span>20</span><br><span>十四</span></span>
+        <span class="rsfin_caline_item"><span>21</span><br><span>十五</span></span>
+        <span class="rsfin_caline_item"><span>22</span><br><span>十六</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">23</span><br><span>十七</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">24</span><br><span>十八</span></span>
+      </div>
+      <div class="rsfin_caline">
+        <span class="rsfin_caline_item"><span>25</span><br><span>十九</span></span>
+        <span class="rsfin_caline_item"><span>26</span><br><span>廿十 </span></span>
+        <span class="rsfin_caline_item"><span>27</span><br><span>廿一</span></span>
+        <span class="rsfin_caline_item"><span>28</span><br><span>廿二</span></span>
+        <span class="rsfin_caline_item"><span>29</span><br><span>廿三</span></span>
+        <span class="rsfin_caline_item"><span class="rsfin_text_red">30</span><br><span>廿四</span></span>
+        <span class="rsfin_caline_item"><span></span><br><span></span></span>
+      </div>
+    </div>
+    <div class="rsfin_blo2">
+      <p class="rsfin_head">汽车行业品牌榜</p>
+      <table border="1" cellpadding="5" cellspacing="0" class="rsf_table">
+          <tr>
+            <td class="rsf_col1">排名</td>
+            <td class="rsf_col2">品牌</td>
+            <td class="rsf_col3">搜索指数</td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">1</td>
+            <td class="rsf_col2">大众</td>
+            <td class="rsf_col3">48912001
+              <span class="rsf_table_row1_l" style="width:140px"></span>
+              <span class="rsf_table_row1_r" style="width:20px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">2</td>
+            <td class="rsf_col2">丰田</td>
+            <td class="rsf_col3">29307333
+              <span class="rsf_table_row1_l" style="width:130px"></span>
+              <span class="rsf_table_row1_r" style="width:30px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">3</td>
+            <td class="rsf_col2">奥迪</td>
+            <td class="rsf_col3">23139070
+             <span class="rsf_table_row1_l" style="width:120px"></span>
+             <span class="rsf_table_row1_r" style="width:40px"></span>
+             </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">4</td>
+            <td class="rsf_col2">本田</td>
+            <td class="rsf_col3">22885564
+             <span class="rsf_table_row1_l" style="width:110px;background-color:#7FCBEF"></span>
+             <span class="rsf_table_row1_r" style="width:50px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">5</td>
+            <td class="rsf_col2">福特</td>
+            <td class="rsf_col3">22324792
+             <span class="rsf_table_row1_l" style="width:100px;background-color:#7FCBEF"></span>
+             <span class="rsf_table_row1_r" style="width:60px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">6</td>
+            <td class="rsf_col2">宝马</td>
+            <td class="rsf_col3">20444077
+             <span class="rsf_table_row1_l" style="width:90px;background-color:#7FCBEF"></span>
+             <span class="rsf_table_row1_r" style="width:70px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">7</td>
+            <td class="rsf_col2">现代</td>
+            <td class="rsf_col3">20114969
+             <span class="rsf_table_row1_l" style="width:80px;background-color:#7FCBEF"></span>
+             <span class="rsf_table_row1_r" style="width:80px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">8</td>
+            <td class="rsf_col2">起亚</td>
+            <td class="rsf_col3">19251680
+              <span class="rsf_table_row1_l" style="width:70px;background-color:#7FCBEF"></span>
+              <span class="rsf_table_row1_r" style="width:90px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">9</td>
+            <td class="rsf_col2">奔驰</td>
+            <td class="rsf_col3">19172837
+             <span class="rsf_table_row1_l" style="width:60px;background-color:#7FCBEF"></span>
+             <span class="rsf_table_row1_r" style="width:100px"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="rsf_col1">10</td>
+            <td class="rsf_col2">别克</td>
+            <td class="rsf_col3">18544027
+              <span class="rsf_table_row1_l" style="width:50px;background-color:#7FCBEF"></span>
+              <span class="rsf_table_row1_r" style="width:110px"></span>
+            </td>
+          </tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
