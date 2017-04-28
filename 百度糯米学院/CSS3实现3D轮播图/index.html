@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3实现3D 轮播图</title>
+    <style>
+        .container{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            top: 200px;
+            transform: rotateX(-30deg);
+            transform-style: preserve-3d;
+            animation: rotate-frame 10s linear infinite;
+        }
+        .stage{
+            position: absolute;
+            width: 100%;    
+            perspective: 1000px;
+        }
+        .side{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 40px;
+            line-height: 200px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        @keyframes rotate-frame{
+        0%{
+            transform: rotateX(-30deg) rotateY(0deg);
+        }
+        100%{
+            transform: rotateX(-30deg) rotateY(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="container">
+        <div class="side" style="transform: rotateY(0deg) translateZ(0px);">0</div>
+        <div class="side" style="transform: rotateY(0deg) translateZ(200px);">1</div>
+        <div class="side" style="transform: rotateY(60deg) translateZ(200px);">2</div>
+        <div class="side" style="transform: rotateY(120deg) translateZ(200px);">3</div>
+        <div class="side" style="transform: rotateY(180deg) translateZ(200px);">4</div>
+        <div class="side" style="transform: rotateY(240deg) translateZ(200px);">5</div>
+        <div class="side" style="transform: rotateY(300deg) translateZ(200px);">6</div>
+    </div>
+</div>
+</body>
+</html>

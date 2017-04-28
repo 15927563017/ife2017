@@ -8,43 +8,79 @@
 	    	margin: 0;
 	    	padding: 0;
 	    }
+	    .container{
+	    	position: relative;
+	    	width: 300px;
+	    	text-align: center;
+	    	margin: 30px auto;
+	    	border: 2px solid rgba(0,0,0,0.4);
+	    }
 	    .radio, .checkbox{
 	    	position: relative;
+	    	display: inline-block;
+	        width: 16px;
 	    }
 		input[type="radio"]{
+			position: absolute;
+			left: 0;
 			width: 16px;
 			height: 16px;
-			margin: 10px;
 			cursor: pointer;
+			z-index: 6;
 			opacity: 0;
 		}
 		input[type="checkbox"]{
+			position: absolute;
+			left: 0;
 			width: 16px;
 			height: 16px;
-			margin: 10px;
 			cursor: pointer;
+			z-index: 6;
 			opacity: 0;
 		}
+		.radio span{
+			position: relative;
+			//margin-left: -42px;
+			display: inline-block;
+			background-color: #fff;
+			width: 14px;
+			height: 14px;
+			border-radius: 14px;
+			border: solid 1px #d9d9d9;
+		}
+		.checkbox span{
+			position: relative;
+			//margin-left: -42px;
+			display: inline-block;
+			background-color: #fff;
+			width: 14px;
+			height: 14px;
+			line-height: 14px;
+			border: solid 1px #d9d9d9;
+		}
 		input[type="radio"]:checked + span{
+			
 			border-color: #d73d32;
 		}
 		input[type="radio"]:checked + span:after{
 			position: absolute;
-			top: 19px;
+			top: 3px;
+			left: 3px;
 			content: '';
 			width: 8px;
 			height: 8px;
 			border-radius: 50%;
 			background-color: #d73d32;
-			margin-left: 3px;
-			margin-top: -5px;
+			//margin-left: 3px;
+			//margin-top: -5px;
 		}
 		input[type="checkbox"]:checked + span{
 			border-color: #d73d32;
 		}
 		input[type="checkbox"]:checked + span:after{
 			position: absolute;
-			left: 10px;
+			top: 0px;
+			left: -1px;
 			margin: auto;
 			content: '\2714';
 			color: red;
@@ -55,37 +91,25 @@
 			font-weight: 700;
 		}
 
-		.radio span{
-			margin-left: -32px;
-			display: inline-block;
-			background-color: #fff;
-			width: 14px;
-			height: 14px;
-			border-radius: 14px;
-			border: solid 1px #d9d9d9;
-		}
-		.checkbox span{
-			margin-left: -32px;
-			display: inline-block;
-			background-color: #fff;
-			width: 14px;
-			height: 14px;
-			line-height: 14px;
-			border: solid 1px #d9d9d9;
-		}
+		
 	
 	</style>
 </head>
 <body>
-<div class="radio">
-	<input type="radio" name="radioButton">
-	<span></span>
-	<input type="radio" name="radioButton">
-	<span></span>
-</div>
-<div class="checkbox">
-	<input type="checkbox" name="checkbox1">
-	<span class="span2"></span>
+<div class="container">
+    <p>自定义checkbox， radio样式</p>
+	<div class="radio">
+		<input type="radio" name="radioButton">
+		<span></span>
+	</div>
+	<div class="radio">
+		<input type="radio" name="radioButton">
+		<span></span>
+	</div>
+	<div class="checkbox">
+		<input type="checkbox" name="checkbox1">
+		<span class="span2"></span>
+	</div>
 </div>
 
 </body>
