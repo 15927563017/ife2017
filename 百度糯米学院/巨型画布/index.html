@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bigCanvas</title>
+    <style>
+        body{
+        	overflow-x: hidden;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+        }
+        #canvas {
+            margin: 10px;
+            cursor: -webkit-grab;
+            //background-color: #CAD5EB;
+        }
+        #canvas-little {
+            //background: -webkit-radial-gradient(#ace, #f96, #1E90FF);
+            //background-color: #CAD5EB;
+        }
+        .buttons {
+            margin-top: 10px;
+            height: 60px;
+            margin-left: 10px;  
+
+        }
+        .buttons button {
+            background-color: rgba(0,0,0,0.5);
+            font-size: 16px;
+            cursor: pointer;
+            color: black;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            border-radius: 5px;
+            padding:5px 15px;
+            -webkit-transition: all ease-in-out 0.5s;
+            transition: all ease-in-out 0.5s;
+        }
+        .buttons button:hover {
+            background-color: rgba(0,0,0,0.8	);
+            color: #fff;
+        }
+        .panDetail{
+        	//font-size: 14px;
+        	margin-left: 30px;
+        }
+        #panColor{
+        	font-size: 16px;
+        }
+        .content{
+        	position: relative;
+        }
+        .global{
+        	position: absolute;
+        	right: 10px;
+        	top: 80px;
+        }
+        #x-range{
+        	width: 1000px;
+        	height: 40px;
+        	margin-left: 10px;
+        }
+        #y-range{
+        	position: absolute;
+        	width: 50px;
+        	height: 600px;
+        	top: 10px;
+        	-webkit-appearance: slider-vertical;
+        }
+        #indicator{
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	border: 1px solid red;
+
+        }
+        .file{
+        	position: absolute;
+        	top: 105px;
+        	left: 0;
+        }
+        .ondraw{
+        	cursor: default !important;
+        }
+
+    </style>
+</head>
+<body>
+<div class='buttons'>
+    <button id="drawCircle">圆</button>
+    <button id="drawRect">矩形</button>
+    <button id="drawLine">线段</button>
+    <span class="panDetail">输入画笔颜色：</span><input type="text" name="f" value="#0000ff" id="panColor">
+    <div id="textHelp">请点击按钮进行您要画的形状</div>
+</div>
+<div class="content">
+	<canvas id="canvas" width="1000" height="600">您的浏览器不支持canvas,请更新您的浏览器或将您的浏览器设置为极速模式</canvas>
+	<input type="range" id="x-range" value="0">
+	<input type="range" id="y-range" value="100">
+</div>
+<div class="global">
+	<canvas id="canvas-little" width="200" height="100">not support</canvas>
+	<div id="indicator" style="width:0px;height:0px"></div>
+	<div class="file"><input type="file" name="" id="file"></div>
+</div>
+
+<script type="application/javascript" src="./js/main.js"></script>
+<script>
+	var options = {
+		bigCanvasId : 'canvas',
+        littleCanvasId : 'canvas-little',
+        indicatorId : 'indicator',
+        xrangeId : 'x-range',
+        yrangeId : 'y-range',
+        imgFileId : 'file',
+        lineBtn : 'drawLine',
+        circleBtn : 'drawCircle',
+        rectBtn : 'drawRect',
+        textHelpId : 'textHelp',
+        panColorId : 'panColor',
+	};
+	var BigCanvas = new BigCanvas(options);
+
+	//var canvas = new Canvas(options);
+</script>
+</body>
+</html>
